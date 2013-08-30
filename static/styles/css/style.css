@@ -1,0 +1,652 @@
+/*fonts*/
+@font-face {
+    font-family: 'MathleteSkinny';
+    src: url('../fonts/mathlete/Mathlete-Skinny-webfont.eot');
+    src: url('../fonts/mathlete/Mathlete-Skinny-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mathlete/Mathlete-Skinny-webfont.woff') format('woff'),
+         url('../fonts/mathlete/Mathlete-Skinny-webfont.ttf') format('truetype'),
+         url('../fonts/mathlete/Mathlete-Skinny-webfont.svg#MathleteSkinny') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neoretrodrawregular';
+    src: url('../fonts/neoretrodraw/NEORD___-webfont.eot');
+    src: url('../fonts/neoretrodraw/NEORD___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neoretrodraw/NEORD___-webfont.woff') format('woff'),
+         url('../fonts/neoretrodraw/NEORD___-webfont.ttf') format('truetype'),
+         url('../fonts/neoretrodraw/NEORD___-webfont.svg#neoretrodrawregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'learning_curve_proregular';
+    src: url('../fonts/learningcurve/LearningCurve_OT-webfont.eot');
+    src: url('../fonts/learningcurve/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/learningcurve/LearningCurve_OT-webfont.woff') format('woff'),
+         url('../fonts/learningcurve/LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('../fonts/learningcurve/LearningCurve_OT-webfont.svg#learning_curve_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*****
+SET UP
+******/
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/*****
+GLOBAL STYLES
+******/
+/*****
+Body text
+******/
+
+body {
+	font-size: 24px;
+	background: #FFF;
+	padding: 20px;
+	font-family: 'Open Sans';
+}
+
+h1 {
+	font-family: "Shadows Into Light";
+/*	font-family: "grandma",sans-serif;
+	font-style: normal;
+	font-weight: 400;*/
+	font-size: 50px;
+	color: #FF3838;
+}
+
+h2 {
+	font-family: "MathleteSkinny";
+	font-size: 60px;
+}
+
+.emphasis {
+	font-weight: bold;
+}
+
+#portfolio p {
+	font-family: "Shadows Into Light";
+	font-size: 30px;
+	color: #FF3838;
+	position: relative;
+	top: -35px;
+}
+}
+/*****
+HEADER FORMATTING
+******/
+
+/*for testing layout*/
+
+#container {
+	background: white;
+}
+
+/*Name + Logo*/
+.name {
+	margin-top: 80px;
+}
+
+#mamie {
+	text-align: right;
+}
+
+#logo {
+	text-align: center;
+}
+
+/*Mission statement*/
+#myStatement {
+	border-top: 1px dashed;
+	border-bottom: 1px dashed;
+	text-align: center;
+	/*background: green;*/
+}
+
+/*Navigation bar*/
+/*#globalHeader {
+	background: blue;
+}*/
+
+#globalNav div {
+	/*background: green;*/
+	font-family: "Shadows Into Light";
+	font-size: 36px;
+	color: #000;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+a {
+	color: black;
+	text-decoration: none; /* no underline for links */
+}
+
+/*For styling the nav links when hovered*/
+a:hover { 
+	color: #FF3838;
+}
+
+/*#about a:hover {
+	background: url("../images/header/nav01.png") no-repeat;
+}*/
+
+#about-page #about a {
+	color: #FF3838;
+	/*background: url("../images/header/nav01.png") no-repeat;*/
+}
+
+/*#projects a:hover {
+	background: url("../images/header/nav02.png") no-repeat;
+}*/
+
+#projects-page #projects a {
+	color: #FF3838;
+	/*background: url("../images/header/nav02.png") no-repeat;*/
+}
+
+/*#blog a:hover {
+	background: url("../images/header/nav03.png") no-repeat;
+}*/
+
+
+/*****
+ABOUT PAGE
+******/
+
+#abstract p {
+	text-align: justify;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 24px;
+}
+
+#story p {
+	text-align: justify;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 20px;
+}
+/*For image transitions*/
+#illustrations img {
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+	position: relative;
+	bottom: -35px;
+}
+
+/*So only one image is visible at a time*/
+#illustrations img.opaque {
+	opacity: 1;
+}
+
+#illustrations {
+	float: left;
+	margin-top: 100px;
+	height: 450px;
+/*	width: 400px;
+	margin-left: 50px;
+	height: 700px;*/
+}
+
+#story {
+	margin: 0 0 0 auto;
+	float: right;
+}
+
+.lead {
+	text-transform: uppercase;
+}
+
+/*Specific image positioning*/
+.annie {
+	position: relative;
+	top: -200px;
+}
+
+.brain {
+	position: relative;
+	top: -640px;
+}
+
+.intel {
+	position: relative;
+	top: -600px;
+}
+
+/*****
+PROJECTS PAGE
+******/
+/*****
+Thumbnails
+******/
+	
+/*project thumbnail formatting*/
+#portfolio {
+	/*background: yellow;*/ /*for testing*/
+}
+
+.row div {
+	height: 250px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+/*****
+TO DO! TO DO!
+******/
+/*project thumbnail hover state*/
+.icon img:hover {
+	position: relative;
+	top: -10px;
+}
+
+/*visibility*/
+.invisible {
+	display: none;
+}
+
+/*****
+Project lightbox
+******/
+
+.project-box {
+	width: 820px;
+	height: 70%;
+	margin: 50px auto;
+}
+
+.project-box .inner {
+	height: 100%;
+	overflow: scroll;
+	padding: 50px;
+	background: #fff;
+}
+
+.project_close {
+	background: black;
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-right: solid 1px white;
+	color: #fff;
+	font-family: 'learning_curve_proregular';
+	font-size: 35px;
+	padding: 10px 10px 5px 10px;
+	position: relative;
+	width: 122px;
+	display: block;
+	margin: 0 auto;
+	top: 50px;
+}
+
+/*fade in*/
+#garage, #twenty, #salon, #design, #hackathon {
+	opacity: 0;
+}
+/*
+#twenty {
+	opacity: 0;
+}
+
+#twenty {
+	opacity: 0;
+}*/
+/*****
+Project descriptions
+******/
+/*layout*/
+#project-wrapper {
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	right: 0px;
+	position: fixed;
+	background: url("../images/overlay.png");
+}
+
+/*fonts*/
+#project-wrapper h1 {
+	font-family: "neoretrodrawregular";
+	color: black;
+	font-size: 2.7em;
+	text-align: center;
+}
+
+#project-wrapper h2 {
+	font-family: "Shadows Into Light";
+	color: #FF3838;
+	font-size: 28px;
+	text-align: center;
+}
+
+#project-wrapper p {
+	text-align: justify;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+}
+
+.heading {
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.story ul li {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+}
+
+/*pop-up pictures*/
+/*fixing background position*/
+.fixed {
+	position: fixed;
+	margin-left: 100px;
+}
+
+.img_full {
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	background: url("../images/overlay.png");
+}
+
+.img_full img {
+	width: 90%;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	transition: opacity 0.6s linear;
+	background: #fff;
+	padding: 10px;
+}
+
+.img_full:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+}
+
+.img_full:target img,
+.img_full:target a.img_close {
+	opacity: 1;
+}
+
+.img_full a.img_close {
+	background: black;
+	padding: 0 10px;
+	position: absolute;
+	top: 60px;
+	right: 5%;
+	font-family: 'learning_curve_proregular';
+	font-size: 35px;
+	text-align: center;
+	overflow: hidden;
+	opacity: 0;
+	color: #fff;
+	z-index: 1001;
+}
+
+/*****
+GARAGE PROJECT
+******/
+/*slideshow*/
+#garage-slides {
+	width: 580px;
+	margin: 0 auto;
+}
+
+.slides {
+	background: #000;
+}
+
+.slides .title {
+	font-family: "Shadows Into Light";
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+	color: #fff;
+	padding-top: 10px;
+}
+
+.slideshow {
+	background: #fff;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: 10px;
+}
+
+.slideshow .slide {
+	width: 580px;
+}
+
+/*.slideshow img {
+	width: 280px;
+}*/
+.slideshow ul {
+	width: 2900px;
+	list-style: none;
+	padding: 0;
+}
+
+.slideshow .slide {
+	float: left;
+}
+
+.slide {
+	padding: 10px 0;
+	/*height: 200px;*/
+}
+
+.slide img {
+	float: left;
+	padding: 5px;
+}
+
+.slide p {
+	margin: 0;
+	padding: 0 10px;
+}
+
+.slideshow-nav {
+	width: 250px;
+	height: 40px;
+	margin: 0 auto;
+	visibility: hidden;
+}
+
+.slideshow-nav ul {
+	list-style: none;
+}
+
+.slideshow-nav ul li {
+	float: left;
+	margin: 0;
+}
+
+.slideshow-nav ul li a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin: 0 10px;
+ 	background-color: #FFF;
+	text-indent: -9999px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+ 
+.slideshow-nav .first {
+ 	background-color: #FF3838;
+ }
+
+/*****
+20P PROJECT
+******/
+.links a {
+	text-decoration: underline;
+	color: #FF3838;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+/*****
+DESIGN THINKING
+******/
+#design-slides {
+	width: 580px;
+	margin: 0 auto;
+}
+
+#design-slides h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#design-slides .slideshow ul {
+	width: 4640px;
+}
+
+#design-slides .slideshow ul li ul {
+	width: 200px;
+	margin-left: 50px;
+	list-style: circle;
+}
+
+#design-slides .slideshow-nav {
+	width: 280px;
+}
+
+.brainstorm img {
+	margin-top: 15px;
+}
+
+.video {
+	position: relative;
+	top: -50px;
+}
+/*****
+SALON PROJECT
+******//*
+#salon-slides .slideshow ul {
+	width: 1160px;
+	list-style: none;
+	padding: 0;
+}
+
+#salon-slides .slide {
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#salon-slides .slideshow-nav {
+	width: 110px;
+	height: 40px;
+	margin: 0 auto;
+	visibility: hidden;
+}
+
+#salon-slides .slideshow-nav ul li a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin: 0 10px;
+	text-indent: -9999px;
+	border: solid 2px #CCC;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+ 
+#salon-slides .slideshow-nav .first {
+ 	background-color: #CCC;
+ }*/
+
+/*NOT SURE WHAT THIS IS*/
+/*#garage {
+	display: none;
+	width: 750px;
+	margin: 50px auto;
+	position: relative;
+	-moz-transition: width 2s;
+	-webkit-transition: width 2s;
+	-o-transition: width 2s;
+	transition: width 2s;
+}*/
+
+/*****
+LIGHTBOX EFFECT
+******/
+/*.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/overlay.png") repeat;
+	text-align: center;
+}
+
+.lightbox > div {
+	position: relative;
+	width: 750px;
+	height: auto;
+	margin: 50px auto;
+	background: #fff;
+	padding: 25px;
+}*/
+
+/*.lightbox p {
+	font-family: 'Pacifico';
+	text-align: right;
+	color: #fff;
+	margin-right: 30px;
+	font-size: 18px;
+}*/
+/*#banner*/
+
+/*footer*/
+/*
+#footer {
+	position: relative;
+	bottom: 0;
+	font-size: 16px;
+}
