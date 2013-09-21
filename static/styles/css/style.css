@@ -90,7 +90,35 @@ h2 {
 	position: relative;
 	top: -35px;
 }
+
+
+/*footer*/
+
+#footer {
+	width: 500px;
+	bottom: 0;
+	margin: 0 auto;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	text-align: center;
+	line-height: 0.5em;
 }
+
+#footer .red {
+	color: #FF3838;
+}
+
+#footer .grey {
+	color: #ccc;
+}
+
+/*spacing on home page*/
+#home #content {
+	height: 200px;
+}
+
 /*****
 HEADER FORMATTING
 ******/
@@ -422,6 +450,12 @@ Project descriptions
 /*****
 GARAGE PROJECT
 ******/
+/*iframe*/
+#garage-video {
+	display: block;
+	margin: 0 auto;
+}
+
 /*slideshow*/
 #garage-slides {
 	width: 580px;
@@ -642,11 +676,3 @@ LIGHTBOX EFFECT
 	font-size: 18px;
 }*/
 /*#banner*/
-
-/*footer*/
-/*
-#footer {
-	position: relative;
-	bottom: 0;
-	font-size: 16px;
-}
